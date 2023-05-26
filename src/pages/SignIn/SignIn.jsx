@@ -41,12 +41,7 @@ const SignIn = () => {
             <div></div>
             <div style={{ padding: "29px", display: "flex" }}>
               <a
-                style={{
-                  color: "white",
-                  marginTop: "9px",
-                  textDecoration: "none",
-                  fontSize: "14px",
-                }}
+                className="image-nav-link"
                 href="#"
                 onClick={() => setType((callback) => (callback ? 0 : 1))}
               >
@@ -65,29 +60,13 @@ const SignIn = () => {
             </div>
           </div>
           <div className="image-user">
-            <div
-              style={{
-                background: "white",
-                borderRadius: "50%",
-                marginLeft: "13px",
-                width: "30px",
-                height: "30px",
-              }}
-            >
+            <div className="image-user-icon">
               <img
                 src="./img/74577.png"
                 style={{ width: "30px", height: "30px" }}
               />
             </div>
-            <div
-              style={{
-                display: "flex",
-                color: "white",
-                fontSize: "12px",
-                marginLeft: "20px",
-                marginTop: "-2px",
-              }}
-            >
+            <div className="image-user-content">
               Largest Space
               <br />
               Community
@@ -106,15 +85,7 @@ const SignIn = () => {
               <hr />
               <p>06</p>
             </div>
-            <div
-              style={{
-                display: "flex",
-                textAlign: "right",
-                width: "100%",
-                marginRight: "24px",
-                justifyContent: "right",
-              }}
-            >
+            <div className="group-button">
               <button className="defautButton">&larr;</button>
               <button className="defautButton">&rarr;</button>
             </div>
