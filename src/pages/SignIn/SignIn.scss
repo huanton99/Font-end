@@ -1,0 +1,222 @@
+.main {
+  background: #d7d7d7;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: #f6f6f6;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  max-width: 65rem;
+  height: 80vh;
+  width: 100%;
+  overflow: auto;
+  align-items: center;
+}
+.container-form-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 55px;
+  p {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+.container-form {
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.container-form-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.form {
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 2;
+  h1 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+.image {
+  width: 50%;
+  display: none;
+  background: red;
+  background-image: url("../../../public/img/download.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 1024px) {
+  .container-form {
+    width: 50%;
+    padding: 28px;
+  }
+  .form {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  // .nav {
+  //   width: 50%;
+  //   padding-left: 50px;
+  //   padding-right: 50px;
+  // }
+
+  .image {
+    display: block;
+    height: 570px;
+  }
+}
+.childForm {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  p {
+    justify-content: right;
+  }
+  a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #1675f2;
+    text-align: right;
+  }
+}
+.childForm-input {
+  padding-left: 12px;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  height: 36px;
+  color: black;
+  margin-bottom: 10px;
+}
+.submit-button {
+  background-color: black;
+  color: white;
+  height: 35px;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.google-button {
+  background-color: white;
+  height: 35px;
+  border-width: 1px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 100%;
+  border-radius: 0.75rem;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  :hover {
+    transform: scale(1.05);
+    transition-duration: 300ms;
+    color: #002d74;
+  }
+}
+.strikethrough {
+  padding-left: 50px;
+  padding-right: 50px;
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  color: gray;
+}
+#language-select {
+  width: 40px;
+  height: 28px;
+  font-size: 12px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#flag-container {
+  margin-top: 2px;
+}
+
+#selected-flag {
+  width: 35px;
+  height: 24px;
+}
+
+.image-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.image-user {
+  display: flex;
+}
+.image-content {
+  color: white;
+  margin-top: 250px;
+  margin-left: 18px;
+  font-size: 25px;
+}
+.strikethrough2 {
+  grid-column: 1;
+  width: 50%;
+  display: grid;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  color: white;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  p {
+    text-align: center;
+  }
+}
+.defautButton {
+  display: flex;
+  border-radius: 2.5rem;
+  border: solid 1px white;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  margin-left: 18px;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+}
+.defautButton :hover {
+  transform: scale(1.05);
+  transition-duration: 300ms;
+  background: white !important;
+}
+.button-languges {
+  display: flex;
+  border-radius: 2.5rem;
+  border: solid 1px #ededed;
+  width: 125px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: -8px;
+}
