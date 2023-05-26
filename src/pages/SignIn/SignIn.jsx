@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./SignIn.scss";
-import { Link } from "react-router-dom";
 import Login from "../../compoments/Login/Login";
 import Register from "../../compoments/Register/Register";
 const SignIn = () => {
